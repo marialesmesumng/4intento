@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mosaico UMNG</title>
+  <link rel="stylesheet" href="mosaicocss.css">
+  <script src="videos.js" defer></script>
+</head>
+<body>
+  <!-- Modal para mostrar los videos -->
+  <div id="videoModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="cerrar" aria-label="Cerrar">&times;</button>
+
+      <!-- VIDEO -->
+      <video id="videoPlayer" width="100%" controls playsinline></video>
+
+      <!-- Nombre y profesión debajo del video -->
+      <div id="videoNombre" class="video-nombre" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="mosaico">
+    <div class="titulo">
+      <h1>UNIVERSIDAD MILITAR NUEVA GRANADA</h1>
+    </div>
+
+    <!-- SUBTÍTULOS DERECHA (decorativos) -->
+    <div class="subtitulo-horizontal">
+      Graduados de<br>Ing en Multimedia<br>
+    </div>
+    <div class="subtitulo-horizontal-abajo">
+      <br>Invitados a conocer<br>Los Futuros ingenieros<br>De la UMNG
+    </div>
+
+    <div class="contenedor-rombos">
+
+      <!-- Fila 1 -->
+      <div class="fila fila1">
+        <div class="rombo"><img src="Dali.jpeg" alt="Dali"></div>
+        <div class="rombo"><img src="daniela.jpeg" alt="Daniela"></div>
+        <div class="rombo"><img src="Danna.jpeg" alt="Danna"></div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="fila fila2">
+        <div class="rombo"><img src="Dustin.jpeg" alt="Dustin"></div>
+        <div class="rombo"><img src="Ed.jpeg" alt="Ed"></div>
+        <div class="rombo"><img src="Emily.jpeg" alt="Emily"></div>
+        <div class="rombo"><img src="isabella.jpeg" alt="Isabella"></div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="fila fila3">
+        <div class="rombo"><img src="juandavid.jpeg" alt="Juan David"></div>
+        <div class="rombo"><img src="karen.jpeg" alt="Karen"></div>
+        <div class="rombo"><img src="Maria.png" alt="Maria"></div>
+        <div class="rombo"><img src="Mariap.jpeg" alt="Maria P"></div>
+        <div class="rombo"><img src="Moreno.jpeg" alt="Moreno"></div>
+      </div>
+
+      <!-- Fila 4 -->
+      <div class="fila fila4">
+        <div class="rombo"><img src="Nicol.jpeg" alt="Nicol"></div>
+        <div class="rombo"><img src="Nicolas.jpeg" alt="Nicolas"></div>
+        <div class="rombo"><img src="Salamanca.jpeg" alt="Salamanca"></div>
+        <div class="rombo"><img src="santiago.jpeg" alt="santiago"></div>
+        <div class="rombo"><img src="Sofia.jpeg" alt="Sofia"></div>
+        <div class="rombo"><img src="Vera.jpeg" alt="Vera"></div>
+      </div>
+
+      <!-- Escudo -->
+      <div class="escudo">
+        <img src="Bandera_UMNG.jpeg" alt="Escudo Universidad Militar Nueva Granada">
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

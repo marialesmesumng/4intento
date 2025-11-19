@@ -1,0 +1,193 @@
+/* Fondo general */
+body {
+  margin: 0;
+  background: red;
+  font-family: Arial, sans-serif;
+}
+
+/* Marco azul */
+.mosaico {
+  margin: 40px auto;
+  width: 90%;
+  background-color: #003366;
+  border: 6px solid #FFD700;
+  position: relative;
+  padding: 30px 50px 60px 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.titulo h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+}
+/* ⭐ Subtítulo en el lado derecho ⭐ */
+.subtitulo-horizontal {
+  position: absolute;
+
+  /* Ubicación EXACTA según tu captura */
+  right: 20px;         /* Ajusta si quieres acercarlo más al borde */
+  top: 150px;           /* Altura perfecta respecto a la primera fila */
+
+  font-size: 50px;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+
+  letter-spacing: 3.5px;
+
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2000;
+}
+/* ⭐ Subtítulo en el lado derecho letra pequeña ⭐ */
+.subtitulo-horizontal-abajo {
+  position: absolute;
+
+  /* Ubicación EXACTA según tu captura */
+  right: 30px;         /* Ajusta si quieres acercarlo más al borde */
+  top: 260px;           /* Altura perfecta respecto a la primera fila */
+
+  font-size: 29px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2000;
+}
+/* Escudo */
+.escudo {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+}
+
+.escudo img {
+  width: 190px;
+  display: block;
+}
+
+/* Contenedor de rombos */
+.contenedor-rombos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Fila base */
+.fila {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* Ajuste simétrico para cada fila */
+.fila1 { transform: translateX(-380px); }
+.fila2 { transform: translateX(-298px); }
+.fila3 { transform: translateX(-218px); }
+.fila4 { transform: translateX(-135px); }
+
+/* ----- Rombo ----- */
+.rombo {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border: 8px solid #FFD700;  /* borde dorado */
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease;
+  overflow: hidden; /* asegura que la imagen no sobresalga */
+}
+
+/* Hover opcional */
+.rombo:hover {
+  transform: rotate(45deg) scale(1.05);
+}
+
+/* Imagen dentro del rombo */
+.rombo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ahora la imagen se adapta sin recortarse */
+  background-color: white; /* relleno blanco para bordes vacíos */
+  transform: rotate(-45deg);
+  border-radius: 8px;
+  display: block;
+}
+
+/* Estilo del modal */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 0;
+  width: 650px;
+  max-width: 90%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === Separación específica entre fila 1 y fila 2 === */
+.fila1 {
+  margin-bottom: 2%; /* Ajusta este valor si aún están muy cerca */
+}
+
+
+/* chatsito :vvvv
+
+/* Nombre en la parte amarilla del rombo */
+.nombre-rombo {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  background: #FFD700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #003366;
+  white-space: nowrap;
+  z-index: 10;
+}
